@@ -1,0 +1,121 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+/* other css file imports */
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/about.css");
+@import url("sections/popular.css");
+@import url("sections/trending.css");
+@import url("sections/subscribe.css");
+@import url("sections/footer.css"); 
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root {
+  --montserrat-bold: "Montserrat", sans-serif;
+  --montserrat-light: "Montserrat", sans-serif;
+
+  --primary-color: rgb(220, 209, 203);
+  --secondary-color: rgb(3, 104, 105);
+  --third-color: rgb(102,133,140);
+
+  --black-200: rgb(33, 32, 39);
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --black-500: #555555;
+  --gray-100: #888888;
+
+  --color-white: #fff;
+  --color-creamson: rgb(220, 209, 203);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--color-creamson);
+}
+
+
+
+
+
+/* END: trending media queries */
+
+
+
+/* Estilos para la inversión de colores del fondo y texto de toda la página */
+.invert-colors {
+  background-color: rgb(3, 104, 105); /* Cambia el fondo según el color que desees */
+  color: rgb(220, 209, 203); /* Cambia el color del texto según el color que desees */
+}
+
+.invert-colors .header__menu a,
+.invert-colors .header__menu li {
+  color: rgb(220, 209, 203);
+}
+
+.invert-colors .header__menu a:hover {
+  color: rgb(3, 104, 105);
+  background-color: rgb(220, 209, 203);
+}
+
+/* Efecto de círculo alrededor del texto al pasar el mouse */
+.header__menu a {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  color: rgb(220, 209, 203);
+  text-decoration: none;
+  transition: color 0.3s, border 0.3s;
+}
+
+.header__menu a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.header__menu a:hover::before {
+  opacity: 1;
+}
+
+.header__menu a:hover {
+  color: rgb(3, 104, 105);
+}
+
+
+
+/* style.css */
+
+.header__search input {
+  background-color: transparent;
+  color: #333; /* Color del texto de la barra de búsqueda */
+}
+
+.profile-icon svg {
+  fill: #333; /* Color del ícono de perfil */
+}
+
+.invert-colors .header__search input {
+  background-color: rgb(3, 104, 105); /* Fondo invertido */
+  color: rgb(220, 209, 203); /* Color del texto invertido */
+}
+
+.invert-colors .profile-icon svg {
+  fill: rgb(220, 209, 203); /* Color del ícono de perfil invertido */
+}

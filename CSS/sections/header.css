@@ -1,0 +1,152 @@
+.header__nav {
+  display: flex;
+  justify-content: space-between; /* Asegura que los elementos estén espaciados correctamente */
+  align-items: center;
+  padding: 20px;
+}
+
+.header__logo img.logo {
+  width: 150px; /* Ajusta este valor según el tamaño que prefieras */
+  height: auto;
+}
+
+.header__menu,
+.header__menu-mobile {
+  padding: 20px;
+  flex: 1.236;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+}
+
+.header__menu li {
+  font-weight: 1000;
+  font-family: 'Montserrat', sans-serif; /* Usamos la fuente importada */
+  color: rgb(3, 104, 105); /* Color de texto */
+  font-size: 26px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Icono de búsqueda en círculo */
+.header__menu li img.search-icon {
+  background-color: rgb(3, 104, 105); /* Color de fondo */
+  border-radius: 50%; /* Círculo */
+  padding: 10px; /* Espaciado interno para que el icono no toque el borde */
+  width: 40px; /* Tamaño del círculo */
+  height: 40px; /* Tamaño del círculo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Asegúrate de que el color del ícono sea blanco */
+.header__menu li img.search-icon path {
+  fill: white; /* Color del ícono */
+}
+
+/* Barra de búsqueda */
+.header__search {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(3, 104, 105); /* Borde de la barra de búsqueda */
+  border-radius: 25px; /* Ovalado */
+}
+
+.header__search input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 16px;
+  border-radius: 25px; /* Ovalado */
+  background-color: transparent;
+  color: #333; /* Color del texto de la barra de búsqueda */
+}
+
+.header__menu-mobile {
+  display: none;
+}
+
+.header__menu-mobile li img {
+  width: 40px; /* Tamaño del ícono del menú móvil */
+  height: 40px; /* Tamaño del ícono del menú móvil */
+  object-fit: contain;
+}
+
+
+
+.profile-icon svg {
+  width: 50px; /* Tamaño del ícono del perfil */
+  height: 50px; /* Tamaño del ícono del perfil */
+  fill: rgb(3, 104, 105) !important; /* Cambia el color del ícono */
+}
+
+.header__menu li a {
+  display: inline-block;
+  padding: 10px 20px; /* Ajusta según el tamaño del óvalo */
+  transition: all 0.3s ease;
+  border-radius: 50px; /* Para crear el óvalo */
+  color: rgb(3, 104, 105); /* Color inicial del texto */
+  position: relative;
+}
+
+.header__menu li a:hover {
+  background-color: rgb(3, 104, 105); /* Color del óvalo */
+  color: rgb(220, 209, 203); /* Color del texto al hacer hover */
+  border-radius: 50px; /* Mantiene la forma de óvalo */
+  padding: 10px 20px; /* Asegura que el espacio interior no cambie */
+  text-decoration: none; /* Elimina el subrayado en los enlaces */
+}
+
+/* Clase para invertir colores */
+.invert-colors {
+  background-color: rgb(3, 104, 105);
+}
+
+.invert-colors a {
+  color: rgb(220, 209, 203);
+}
+
+.invert-colors a:hover {
+  background-color: rgb(220, 209, 203);
+  color: rgb(3, 104, 105);
+  border-radius: 50px;  /* Para el efecto de círculo */
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Estilo normal para la barra de búsqueda y el ícono de perfil */
+.header__search input {
+  background-color: transparent;
+  color: #333; /* Color del texto de la barra de búsqueda */
+}
+
+.profile-icon svg {
+  fill: #333; /* Color del ícono de perfil */
+}
+
+/* Estilo invertido para la barra de búsqueda y el ícono de perfil */
+.invert-colors .header__search {
+  border: 2px solid rgb(220, 209, 203); /* Borde de la barra de búsqueda invertido */
+}
+
+.invert-colors .header__search input {
+  background-color: transparent;
+  color: rgb(220, 209, 203); /* Color del texto invertido */
+}
+
+.invert-colors .header__menu li img.search-icon {
+  background-color: rgb(220, 209, 203); /* Color de fondo invertido del ícono de búsqueda */
+}
+
+.invert-colors .profile-icon svg {
+  fill: rgb(220, 209, 203) !important; /* Color del ícono de perfil invertido */
+}

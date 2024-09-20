@@ -1,0 +1,143 @@
+/* Asegúrate de importar la fuente Montserrat en tu CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+.catalogo {
+  padding: 40px;
+  text-align: center;
+ 
+}
+
+.catalogo-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 60px; /* Aumentar tamaño del título */
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  margin-top: -50px;
+}
+
+.catalogo-cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.card {
+  border-radius: 25px;
+  box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px; /* Ancho de las tarjetas */
+  height: 700px; /* Altura estándar */
+  transition: transform 0.3s; /* Transición para el efecto de destacar */
+}
+
+.card-two {
+  transform: scale(1.2); /* Hacer que la tarjeta del medio resalte */
+  height: 550x; /* Altura mayor para la tarjeta del medio */
+}
+
+.card-one {
+  background: linear-gradient(135deg, #e8f1e4, #84927e);
+}
+
+.card-two {
+  background: linear-gradient(135deg, rgb(103, 131, 138), rgb(103, 155, 167));
+}
+
+.card-three {
+  background: linear-gradient(135deg, rgb(134, 161, 147), rgb(84, 117, 96));
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px; /* Aumentar tamaño del título */
+}
+
+.card-button {
+  border: none;
+  border-radius: 30px; /* Hacer el botón más redondo */
+  padding: 7px 20px; /* Aumentar el padding para un mejor aspecto */
+  cursor: pointer;
+  font-size: 16px; /* Aumentar tamaño del texto del botón */
+  font-weight: bold;
+}
+
+.card-image img {
+  width: 100%;
+  height: 240px; /* Aumentar altura de la imagen */
+  border-radius: 20px;
+  object-fit: cover; /* Asegura que las imágenes se corten adecuadamente */
+  margin-bottom: 15px; /* Espacio entre la imagen y el botón */
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna */
+}
+
+.card-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px; /* Aumentar tamaño del subtítulo */
+  margin-bottom: 10px; /* Espacio entre subtítulo y lista */
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Cambiar a light */
+  font-size: large; /* Aumentar tamaño de los elementos de la lista */
+}
+
+.card-list li {
+  border-bottom: 1px solid #000000;
+  padding: 10px 0; /* Ajustar padding para la lista */
+  text-align: left; /* Justificar a la izquierda el contenido de la lista */
+  color: black; /* Color negro para los textos de las dos primeras cards */
+}
+
+.card-one .card-list li,
+.card-two .card-list li {
+  color: black; /* Texto negro para las dos primeras cards */
+}
+
+.card-three .card-list li {
+  color: white; /* Texto blanco para la tercera card */
+}
+
+
+/* Eliminar la línea de borde del último elemento de la lista en cada tarjeta */
+.card-list li:last-child {
+  border-bottom: none; /* Esta regla se aplicará a todas las listas */
+}
+
+/* Líneas de la primera y segunda tarjeta */
+.card-one .card-list li,
+.card-two .card-list li {
+  color: black; /* Texto negro para las dos primeras cards */
+  border-bottom: 1px solid #000000; /* Líneas negras para las dos primeras cards */
+}
+
+/* Cambiar el color de las líneas de la última tarjeta a blanco */
+.card-three .card-list li {
+  color: white; /* Texto blanco para la tercera card */
+  border-bottom: 1px solid white; /* Línea blanca para todos los elementos de la tercera card */
+}
+
+/* Asegúrate de que el último elemento de la tercera tarjeta no tenga borde */
+.card-three .card-list li:last-child {
+  border-bottom: none; /* Eliminar la línea de borde del último elemento de la tercera tarjeta */
+}

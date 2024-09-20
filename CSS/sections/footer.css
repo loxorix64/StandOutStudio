@@ -1,0 +1,160 @@
+/* General section styles */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-left h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.contact-left p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+ 
+}
+
+/* Icon styles */
+.contact-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 100%; /* Hace los iconos circulares */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right section styles */
+.contact-right h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-top: 2.5%;
+}
+
+/* Form layout: phone and email in the same row */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 20px 10px; /* Aumentar el padding vertical */
+  font-size: 1em;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  background-color: #cec6bc; /* Fondo color (223, 208, 192) */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; /* Montserrat light */
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px; /* Aumentar altura por defecto del textarea */
+}
+
+/* Botón de envío alineado a la derecha */
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Alinea el botón a la derecha */
+}
+
+.btn-submit {
+  background-color: rgb(3, 104, 105);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.1em;
+  border-radius: 25px; /* Más redondeado */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: rgb(2, 85, 86);
+}
+
+
+/* Estilo por defecto de los inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 1em;
+  border: none; /* Elimina los bordes por defecto */
+  border-radius: 10px;
+  background-color: #cec6bc; /* Fondo color (223, 208, 192) */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  outline: none; /* Elimina el borde azul celeste al hacer foco */
+}
+
+/* Cambia el fondo a blanco y quita el borde negro al hacer foco */
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: white; /* Cambia el fondo a blanco */
+  outline: none; /* Elimina cualquier borde o sombra adicional */
+}
+
+/* También puedes aplicar hover si deseas que cambie al pasar el mouse */
+.form-group input:hover,
+.form-group textarea:hover {
+  background-color: #f5f5f5; /* Color de fondo claro al pasar el mouse */
+}
